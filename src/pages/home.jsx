@@ -1,5 +1,4 @@
 import Stories from "../components/Stories";
-import ArrowButton from "../components/UI/button/button-arrow";
 import MainStory from "../components/MainStory";
 
 export default function Home() {
