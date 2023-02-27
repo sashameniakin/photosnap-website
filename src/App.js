@@ -1,7 +1,13 @@
-import "./App.css";
+import Navbar from "./components/UI/Navbar/Navbar";
+import AppRouter from "./components/AppRouter";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Navbar />
+      <AppRouter />
+    </>
+  );
 }
 
 export default App;
