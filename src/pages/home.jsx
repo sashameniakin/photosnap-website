@@ -9,7 +9,7 @@ export default function Home() {
         description={
           " Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others."
         }
-        flexDirection={""}
+        flexDirection={"desktop:flex-row tablet:flex-row"}
         backgroundColor={"bg-pureBlack"}
         textColor={"text-pureWhite"}
         src={"../images/home/create-and-share.jpg"}
@@ -17,7 +17,8 @@ export default function Home() {
         srcMobile={"../images/home/mobile/create-and-share.jpg"}
         alt={"create-and-share-foto"}
         arrowSrc={"../images/home/arrow.svg"}
-        dekor={""}
+        linieY={"hidden desktop:block tablet:block"}
+        linieX={"block desktop:hidden tablet:hidden"}
       />
 
       <MainStory
@@ -25,14 +26,16 @@ export default function Home() {
         description={
           "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
         }
-        flexDirection={"flex-row-reverse"}
+        flexDirection={"desktop:flex-row-reverse tablet:flex-row-reverse"}
         backgroundColor={"bg-pureWhite"}
         textColor={"text-pureBlack"}
         src={"../images/home/beautiful-stories.jpg"}
         srcTablet={"../images/home/tablet/beautiful-stories.jpg"}
+        srcMobile={"../images/home/mobile/beautiful-stories.jpg"}
         alt={"beautiful-stories"}
         arrowSrc={"../images/home/arrow-black.svg"}
-        dekor={"hidden"}
+        linieY={"hidden desktop:hidden tablet:hidden"}
+        linieX={"hidden desktop:hidden tablet:hidden"}
       />
 
       <MainStory
@@ -40,24 +43,26 @@ export default function Home() {
         description={
           "Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it."
         }
-        flexDirection={""}
+        flexDirection={"desktop:flex-row tablet:flex-row"}
         backgroundColor={"bg-pureWhite"}
         textColor={"text-pureBlack"}
         src={"../images/home/designed-for-everyone.jpg"}
         srcTablet={"../images/home/tablet/designed-for-everyone.jpg"}
+        srcMobile={"../images/home/mobile/designed-for-everyone.jpg"}
         alt={"designed-for-everyone"}
         arrowSrc={"../images/home/arrow-black.svg"}
-        dekor={"hidden"}
+        linieY={"hidden desktop:hidden tablet:hidden"}
+        linieX={"hidden desktop:hidden tablet:hidden"}
       />
 
       <Stories />
 
-      <div className="flex flex-row items-end my-[120px] w-3/4 mx-auto gap-[30px]">
+      <div className="flex flex-col items-end my-[120px] w-3/4 mx-auto gap-[30px] desktop:flex-row desktop:w-3/4 tablet:flex-col tablet:w-1/2">
         <div className="flex flex-col items-center ">
           <img src="../images/home/responsive.svg" alt="responsive" />
 
           <p className="text-h3 mt-12 mb-4">100% Responsive</p>
-          <p className="text-body text-justify">
+          <p className="text-body text-center">
             No matter which the device you're on, our site is fully responsive
             and stories look beautiful on any screen.
           </p>
@@ -66,7 +71,7 @@ export default function Home() {
           <img src="../images/home/no-limit.svg" alt="no-limit" />
 
           <p className="text-h3 mt-[66px] mb-4">No Photo Upload Limit</p>
-          <p className="text-body text-justify">
+          <p className="text-body text-center">
             Our tool has no limits on uploads or bandwidth. Freely upload in
             bulk and share all of your stories in one go.
           </p>
@@ -75,7 +80,7 @@ export default function Home() {
           <img src="../images/home/embed.svg" alt="embed" />
 
           <p className="text-h3 mt-12 mb-4">Available to Embed</p>
-          <p className="text-body text-justify">
+          <p className="text-body text-center">
             Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
             videos, Google Maps, and more.
           </p>

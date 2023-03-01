@@ -18,7 +18,7 @@ export default function Story({ title, author, src, alt }) {
             <p className="text-pureWhite text-h4">READ STORY</p>
             <img src="../images/home/arrow.svg" alt="arrow" />
           </div>
-          <div className="h-[6px] bg-gradient z-10 hidden group-hover:flex" />
+          <div className="h-[6px] relative bottom-0 bg-gradient z-10 hidden group-hover:flex" />
         </div>
       </a>
     </>

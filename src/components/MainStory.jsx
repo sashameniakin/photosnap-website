@@ -11,25 +11,30 @@ export default function MainStory({
   srcMobile,
   alt,
   arrowSrc,
-  dekor,
+  linieY,
+  linieX,
 }) {
   return (
-    <div className={`relative flex ${flexDirection} w-full`}>
+    <div className={`relative flex flex-col-reverse ${flexDirection}`}>
       <div
-        className={`flex flex-col justify-center gap-[21px]  ${backgroundColor} ${textColor} w-[43%] tablet:w-[43%] tablet:px-28 mobile:px-10 mobile:w-[70%]`}
+        className={`flex relative flex-col justify-center gap-[21px] ${backgroundColor} ${textColor} w-full h-[419px] pl-[33px] pr-6 desktop:w-[43%] desktop:px-28 desktop:h-auto tablet:px-10 tablet:w-[65%] tablet:h-auto`}
       >
-        <p className="text-h1">{title}</p>
+        <div
+          className={`absolute ${linieX} w-[128px] h-[6px] bg-gradient top-[0%] left-[10%]`}
+        />
+        <p className="text-h1Mobile desktop:text-h1 tablet:text-h1">{title}</p>
         <p className="text-body opacity-60 mb-[27px]">{description}</p>
         <ArrowButton name={"GET AN INVITE"} src={arrowSrc} />
       </div>
-      <picture className="w-[57%]">
-        <source media="(min-width:769px)" srcSet={src} />
+
+      <picture className="w-full desktop:w-[57%] tablet:w-[35%]">
+        <source media="(min-width:821px)" srcSet={src} />
         <source media="(min-width:415px)" srcSet={srcTablet} />
         <img src={srcMobile} alt={alt} className="w-full" />
       </picture>
 
       <div
-        className={`absolute ${dekor} w-[6px] h-[304px] bg-gradient top-1/4`}
+        className={`absolute ${linieY} w-[6px] h-[304px] bg-gradient top-1/4`}
       />
     </div>
   );
