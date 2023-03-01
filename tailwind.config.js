@@ -10,9 +10,8 @@ module.exports = {
     },
 
     screens: {
-      desktop: "1440px",
-      tablet: "768px",
-      mobile: "375px",
+      desktop: "821px",
+      tablet: "415px",
     },
 
     colors: {
@@ -22,6 +21,7 @@ module.exports = {
       first: "hsl(28, 100%, 79%)",
       second: "hsl(329, 36%, 59%)",
       third: "hsl(229, 100%, 67%)",
+      modal: "rgba(0, 0, 0, 0.5)",
       gradientBlackStart: "rgba(0, 0, 0, 0.0001)",
       gradientBlackEnd: "rgba(0, 0, 0, 0.661222)",
       gradient:
@@ -34,6 +34,14 @@ module.exports = {
           lineHeight: "48px",
           fontWeight: "700",
           letterSpacing: "4.17px",
+        },
+      ],
+      h1Mobile: [
+        "32px",
+        {
+          lineHeight: "40px",
+          fontWeight: "700",
+          letterSpacing: "3.33px",
         },
       ],
       h2: [
@@ -63,6 +71,21 @@ module.exports = {
         {
           lineHeight: "25px",
           fontWeight: "400",
+        },
+      ],
+      menu: [
+        "15px",
+        {
+          fontWeight: "700",
+          lineHeight: "19.53px",
+          letterSpacing: "2.5px",
+        },
+      ],
+      stories: [
+        "13px",
+        {
+          fontWeight: "400",
+          lineHeight: "16.93px",
         },
       ],
     },
