@@ -4,11 +4,17 @@ import ArrowButton from "../button/button-arrow";
 export default function Footer() {
   return (
     <div className="bg-pureBlack">
-      <div className="flex justify-between bg-pureBlack w-3/4 mx-auto py-16">
+      <div className="flex justify-between bg-pureBlack w-3/4 mx-auto py-16 mobile:w-[90%] mobile:mx-auto">
         <div className="flex flex-col justify-between">
           <Link to="/">
             <img src="./images/home/logo-white.svg" alt="logo" />
           </Link>
+          <div className="tablet:hidden mobile:flex text-pureWhite w-[50%] gap-[19px] pt-8 pb-[72px]">
+            <p className="text-h4 hover:opacity-30 cursor-pointer">HOME</p>
+            <p className="text-h4 hover:opacity-30 cursor-pointer">STORIES</p>
+            <p className="text-h4 hover:opacity-30 cursor-pointer">FEATURES</p>
+            <p className="text-h4 hover:opacity-30 cursor-pointer">PRICING</p>
+          </div>
           <div className="flex gap-[13.33px]">
             <img
               src="./images/home/FooterIcons/facebook-white.svg"
@@ -74,7 +80,7 @@ export default function Footer() {
             />
           </div>
         </div>
-        <div className="flex flex-col text-pureWhite w-[50%] gap-[19px]">
+        <div className="tablet:flex flex-col text-pureWhite w-[50%] gap-[19px] mobile:hidden ">
           <p className="text-h4 hover:opacity-30 cursor-pointer">HOME</p>
           <p className="text-h4 hover:opacity-30 cursor-pointer">STORIES</p>
           <p className="text-h4 hover:opacity-30 cursor-pointer">FEATURES</p>

@@ -13,8 +13,11 @@ export default function Home() {
         backgroundColor={"bg-pureBlack"}
         textColor={"text-pureWhite"}
         src={"../images/home/create-and-share.jpg"}
+        srcTablet={"../images/home/tablet/create-and-share.jpg"}
+        srcMobile={"../images/home/mobile/create-and-share.jpg"}
         alt={"create-and-share-foto"}
         arrowSrc={"../images/home/arrow.svg"}
+        dekor={""}
       />
 
       <MainStory
@@ -26,8 +29,10 @@ export default function Home() {
         backgroundColor={"bg-pureWhite"}
         textColor={"text-pureBlack"}
         src={"../images/home/beautiful-stories.jpg"}
+        srcTablet={"../images/home/tablet/beautiful-stories.jpg"}
         alt={"beautiful-stories"}
         arrowSrc={"../images/home/arrow-black.svg"}
+        dekor={"hidden"}
       />
 
       <MainStory
@@ -39,13 +44,15 @@ export default function Home() {
         backgroundColor={"bg-pureWhite"}
         textColor={"text-pureBlack"}
         src={"../images/home/designed-for-everyone.jpg"}
+        srcTablet={"../images/home/tablet/designed-for-everyone.jpg"}
         alt={"designed-for-everyone"}
         arrowSrc={"../images/home/arrow-black.svg"}
+        dekor={"hidden"}
       />
 
       <Stories />
 
-      <div className="flex justify-center items-end my-[120px] w-3/4 mx-auto gap-[30px]">
+      <div className="flex flex-row items-end my-[120px] w-3/4 mx-auto gap-[30px]">
         <div className="flex flex-col items-center ">
           <img src="../images/home/responsive.svg" alt="responsive" />
 
