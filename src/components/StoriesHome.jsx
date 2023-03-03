@@ -1,8 +1,8 @@
 import Story from "./Story";
 
-export default function Stories() {
+export default function StoriesHome() {
   return (
-    <div className="grid w-auto grid-rows-4 tablet:grid-cols-2 tablet:grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 ">
+    <section className="grid w-auto grid-rows-4 tablet:grid-cols-2 tablet:grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 ">
       <Story
         title={"The Mountains"}
         author={"by John Appleseed"}
@@ -27,6 +27,6 @@ export default function Stories() {
         src={"../images/home/architecturals.jpg"}
         alt={"architecturals"}
       />
-    </div>
+    </section>
   );
 }

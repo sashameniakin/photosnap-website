@@ -89,7 +89,11 @@ module.exports = {
         },
       ],
     },
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        2: "repeat(2, minmax(300px, 300px))",
+      },
+    },
   },
   plugins: [],
 };
