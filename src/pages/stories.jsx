@@ -1,4 +1,5 @@
 import ArrowButton from "../components/UI/button/button-arrow";
+import StoriesStories from "../components/StoriesStories";
 
 export default function Stories() {
   return (
@@ -19,7 +20,26 @@ export default function Stories() {
             className="w-full"
           />
         </picture>
-        <div className="absolute text-pureWhite flex flex-col gap-6 justify-center top-0 bottom-0 w-1/4 mx-28">
+        <div className="bg-pureBlack text-pureWhite flex flex-col gap-6 px-6 py-12 justify-center desktop:hidden tablet:hidden">
+          <p className="text-h4">LAST MONTH'S FEATURED STORY</p>
+          <div className="flex flex-col gap-4">
+            <p className="text-h1">HAZY FULL MOON OF APPALACHIA</p>
+            <p className="text-stories opacity-75">
+              March 2nd 2020{" "}
+              <span className="text-stories opacity-100">
+                by John Appleseed
+              </span>
+            </p>
+          </div>
+          <article className="text-body opacity-60">
+            The dissected plateau area, while not actually made up of geological
+            mountains, is popularly called "mountains," especially in eastern
+            Kentucky and West Virginia, and while the ridges are not high, the
+            terrain is extremely rugged.
+          </article>
+          <ArrowButton name="READ THE STORY" src="./images/home/arrow.svg" />
+        </div>
+        <div className="absolute hidden text-pureWhite desktop:flex tablet:flex flex-col gap-6 justify-center top-0 bottom-0 w-1/2 mx-28">
           <p className="text-h4">LAST MONTH'S FEATURED STORY</p>
           <div className="flex flex-col gap-4">
             <p className="text-h1">HAZY FULL MOON OF APPALACHIA</p>
@@ -39,6 +59,7 @@ export default function Stories() {
           <ArrowButton name="READ THE STORY" src="./images/home/arrow.svg" />
         </div>
       </section>
+      <StoriesStories />
     </>
   );
 }

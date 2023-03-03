@@ -1,5 +1,6 @@
-import Stories from "../components/Stories";
+import StoriesHome from "../components/StoriesHome";
 import MainStory from "../components/MainStory";
+import Feature from "../components/Feature";
 
 export default function Home() {
   return (
@@ -55,36 +56,30 @@ export default function Home() {
         linieX={"hidden desktop:hidden tablet:hidden"}
       />
 
-      <Stories />
+      <StoriesHome />
 
       <div className="flex flex-col items-end my-[120px] w-3/4 mx-auto gap-[30px] desktop:flex-row desktop:w-3/4 tablet:flex-col tablet:w-1/2">
-        <div className="flex flex-col items-center ">
-          <img src="../images/home/responsive.svg" alt="responsive" />
-
-          <p className="text-h3 mt-12 mb-4">100% Responsive</p>
-          <p className="text-body text-center">
-            No matter which the device you're on, our site is fully responsive
-            and stories look beautiful on any screen.
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <img src="../images/home/no-limit.svg" alt="no-limit" />
-
-          <p className="text-h3 mt-[66px] mb-4">No Photo Upload Limit</p>
-          <p className="text-body text-center">
-            Our tool has no limits on uploads or bandwidth. Freely upload in
-            bulk and share all of your stories in one go.
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <img src="../images/home/embed.svg" alt="embed" />
-
-          <p className="text-h3 mt-12 mb-4">Available to Embed</p>
-          <p className="text-body text-center">
-            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
-            videos, Google Maps, and more.
-          </p>
-        </div>
+        <Feature
+          title="100% Responsive"
+          description="No matter which the device you're on, our site is fully responsive
+        and stories look beautiful on any screen."
+          alt="responsive"
+          src="../images/home/responsive.svg"
+        />
+        <Feature
+          title="No Photo Upload Limit"
+          description="Our tool has no limits on uploads or bandwidth. Freely upload in
+          bulk and share all of your stories in one go."
+          alt="no-limit"
+          src="../images/home/no-limit.svg"
+        />
+        <Feature
+          title="Available to Embed"
+          description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+          videos, Google Maps, and more."
+          alt="embed"
+          src="../images/home/embed.svg"
+        />
       </div>
     </>
   );

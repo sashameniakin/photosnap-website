@@ -10,10 +10,27 @@ export default function Footer() {
             <img src="./images/home/logo-white.svg" alt="logo" />
           </Link>
           <div className="hidden desktop:hidden tablet:flex text-pureWhite w-[50%] gap-[19px] pt-8 pb-[72px]">
-            <p className="text-h4 hover:opacity-30 cursor-pointer">HOME</p>
-            <p className="text-h4 hover:opacity-30 cursor-pointer">STORIES</p>
-            <p className="text-h4 hover:opacity-30 cursor-pointer">FEATURES</p>
-            <p className="text-h4 hover:opacity-30 cursor-pointer">PRICING</p>
+            <Link to="/" className="text-h4 hover:opacity-30 cursor-pointer">
+              HOME
+            </Link>
+            <Link
+              to="/stories"
+              className="text-h4 hover:opacity-30 cursor-pointer"
+            >
+              STORIES
+            </Link>
+            <Link
+              to="/features"
+              className="text-h4 hover:opacity-30 cursor-pointer"
+            >
+              FEATURES
+            </Link>
+            <Link
+              to="/pricing"
+              className="text-h4 hover:opacity-30 cursor-pointer"
+            >
+              PRICING
+            </Link>
           </div>
           <div className="flex justify-center pb-[49px] pt-8 gap-[13.33px] tablet:pb-0 tablet:pt-0 desktop:pb-0 desktop:pt-0 tablet:justify-start desktop:justify-start">
             <img
@@ -81,10 +98,27 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center pb-[119px] text-pureWhite w-[50%] gap-[19px] desktop:flex desktop:flex-col desktop:pb-0 desktop:items-stretch tablet:hidden ">
-          <p className="text-h4 hover:opacity-30 cursor-pointer">HOME</p>
-          <p className="text-h4 hover:opacity-30 cursor-pointer">STORIES</p>
-          <p className="text-h4 hover:opacity-30 cursor-pointer">FEATURES</p>
-          <p className="text-h4 hover:opacity-30 cursor-pointer">PRICING</p>
+          <Link to="/" className="text-h4 hover:opacity-30 cursor-pointer">
+            HOME
+          </Link>
+          <Link
+            to="/stories"
+            className="text-h4 hover:opacity-30 cursor-pointer"
+          >
+            STORIES
+          </Link>
+          <Link
+            to="/features"
+            className="text-h4 hover:opacity-30 cursor-pointer"
+          >
+            FEATURES
+          </Link>
+          <Link
+            to="/pricing"
+            className="text-h4 hover:opacity-30 cursor-pointer"
+          >
+            PRICING
+          </Link>
         </div>
         <div className="flex flex-col items-center text-pureWhite desktop:justify-between desktop:items-end tablet:justify-between tablet:items-end">
           <ArrowButton name={"GET AN INVITE"} src={"./images/home/arrow.svg"} />
