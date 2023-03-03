@@ -4,8 +4,8 @@ import Feature from "../components/Feature";
 export default function Features() {
   return (
     <>
-      <section className="relative flex">
-        <div className="flex relative flex-col justify-center gap-[21px] bg-pureBlack text-pureWhite w-full h-[419px] pl-[33px] pr-6 desktop:w-[43%] desktop:px-28 desktop:h-auto tablet:px-10 tablet:w-[65%] tablet:h-auto">
+      <section className="relative flex flex-col-reverse desktop:flex-row tablet:flex-row">
+        <div className="flex relative flex-col justify-center gap-[21px] bg-pureBlack text-pureWhite w-full h-auto px-7 py-[72px] desktop:w-[43%] desktop:px-28 tablet:px-10 tablet:w-[65%]">
           <div className="absolute block desktop:hidden tablet:hidden w-[128px] h-[6px] bg-gradient top-[0%] left-[10%]" />
           <p className="text-h1Mobile desktop:text-h1 tablet:text-h1">
             FEATURES
@@ -37,7 +37,7 @@ export default function Features() {
           className={`absolute hidden desktop:block tablet:block w-[6px] h-[144px] bg-gradient top-1/3`}
         />
       </section>
-      <section className="grid grid-cols-3 grid-rows-2 w-[80%] mx-auto my-20 items-center gap-12">
+      <section className="grid grid-cols-1 grid-rows-6 w-[80%] mx-auto my-20 items-center gap-12 tablet:grid-cols-2 tablet:grid-rows-3 desktop:grid-rows-2 desktop:grid-cols-3 ">
         <Feature
           title="100% Responsive"
           description="No matter which the device you're on, our site is fully responsive
@@ -95,8 +95,8 @@ export default function Features() {
           />
         </picture>
         <div className="absolute h-full w-full top-0 flex justify-between">
-          <div className="flex items-center mx-auto justify-between w-[90%] text-pureWhite">
-            <p className="text-h1 w-1/3">
+          <div className="flex flex-col justify-center gap-6 mx-auto desktop:items-center desktop:justify-between tablet:items-center tablet:justify-between w-[90%] text-pureWhite desktop:flex-row tablet:flex-row">
+            <p className="text-h1Mobile w-full desktop:text-h1 tablet:text-h1 desktop:w-1/2 tablet:w-1/2">
               WE'RE IN BETA. GET YOUR INVITE TODAY!
             </p>
             <ArrowButton
