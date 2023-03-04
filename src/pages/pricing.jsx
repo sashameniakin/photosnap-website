@@ -1,45 +1,24 @@
-import ArrowButton from "../components/UI/button/button-arrow";
 import Switch from "../components/UI/Switch/switch";
 import { useState } from "react";
+import BGSecondary from "../components/BGSecondary";
+import NavSecondary from "../components/NavSecondary";
 
 export default function Pricing() {
   const [pricing, setPricing] = useState();
 
   return (
     <>
-      <section className="relative flex flex-col-reverse desktop:flex-row tablet:flex-row">
-        <div className="flex relative flex-col justify-center gap-[21px] bg-pureBlack text-pureWhite w-full h-auto px-7 py-[72px] desktop:w-[43%] desktop:px-28 tablet:px-10 tablet:w-[65%]">
-          <div className="absolute block desktop:hidden tablet:hidden w-[128px] h-[6px] bg-gradient top-[0%] left-[10%]" />
-          <p className="text-h1Mobile desktop:text-h1 tablet:text-h1">
-            PRICING
-          </p>
-          <p className="text-body opacity-60 mb-[27px]">
-            Create a your stories, Photosnap is a platform for photographers and
-            visual storytellers. It’s the simple way to create and share your
-            photos.
-          </p>
-        </div>
+      <NavSecondary
+        title="PRICING"
+        description="  Create a your stories, Photosnap is a platform for photographers and
+     visual storytellers. It’s the simple way to create and share your
+     photos."
+        src="./images/pricing/hero.jpg"
+        srcTablet="./images/pricing/tablet/hero.jpg"
+        srcMobile="./images/pricing/mobile/hero.jpg"
+        alt="hero"
+      />
 
-        <picture className="w-full desktop:w-[57%] tablet:w-[35%]">
-          <source
-            media="(min-width:821px)"
-            srcSet="./images/pricing/hero.jpg"
-          />
-          <source
-            media="(min-width:415px)"
-            srcSet="./images/pricing/tablet/hero.jpg"
-          />
-          <img
-            src="./images/pricing/mobile/hero.jpg"
-            alt="hero"
-            className="w-full"
-          />
-        </picture>
-
-        <div
-          className={`absolute hidden desktop:block tablet:block w-[6px] h-[144px] bg-gradient top-1/3`}
-        />
-      </section>
       <Switch pricing={pricing} setPricing={setPricing} />
       <section className="flex justify-center items-center gap-[30px]">
         <div className="flex flex-col items-center bg-cardBg my-20 px-10 gap-10 h-[407px]">
@@ -92,34 +71,8 @@ export default function Pricing() {
           </button>
         </div>
       </section>
-      <section className="relative">
-        <picture className="w-full">
-          <source
-            media="(min-width:821px)"
-            srcSet="./images/features/bg-beta.jpg"
-          />
-          <source
-            media="(min-width:415px)"
-            srcSet="./images/features/tablet/bg-beta.jpg"
-          />
-          <img
-            src="./images/features/mobile/bg-beta.jpg"
-            alt="bg-beta"
-            className="w-full"
-          />
-        </picture>
-        <div className="absolute h-full w-full top-0 flex justify-between">
-          <div className="flex flex-col justify-center gap-6 mx-auto desktop:items-center desktop:justify-between tablet:items-center tablet:justify-between w-[90%] text-pureWhite desktop:flex-row tablet:flex-row">
-            <p className="text-h1Mobile w-full desktop:text-h1 tablet:text-h1 desktop:w-1/2 tablet:w-1/2">
-              WE'RE IN BETA. GET YOUR INVITE TODAY!
-            </p>
-            <ArrowButton
-              name={"GET AN INVITE"}
-              src={"./images/home/arrow.svg"}
-            />
-          </div>
-        </div>
-      </section>
+
+      <BGSecondary />
     </>
   );
 }
