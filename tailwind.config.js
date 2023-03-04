@@ -18,9 +18,7 @@ module.exports = {
       pureBlack: "hsl(0, 0%, 0%)",
       lightGrey: "hsl(0, 0%, 87%)",
       pureWhite: "hsl(0, 0%, 100%)",
-      first: "hsl(28, 100%, 79%)",
-      second: "hsl(329, 36%, 59%)",
-      third: "hsl(229, 100%, 67%)",
+      cardBg: "rgba(245, 245, 245)",
       modal: "rgba(0, 0, 0, 0.5)",
       gradientBlackStart: "rgba(0, 0, 0, 0.0001)",
       gradientBlackEnd: "rgba(0, 0, 0, 0.661222)",
@@ -61,7 +59,7 @@ module.exports = {
       h4: [
         "12px",
         {
-          lineHeight: "16px",
+          lineHeight: "15.62px",
           fontWeight: "700",
           letterSpacing: "2px",
         },
