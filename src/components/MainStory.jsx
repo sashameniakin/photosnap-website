@@ -22,7 +22,9 @@ export default function MainStory({
         <div
           className={`absolute ${linieX} w-[128px] h-[6px] bg-gradient top-[0%] left-[10%]`}
         />
-        <p className="text-h1Mobile desktop:text-h1 tablet:text-h1">{title}</p>
+        <h1 className="text-h1Mobile desktop:text-h1 tablet:text-h1">
+          {title}
+        </h1>
         <p className="text-body opacity-60 mb-[27px]">{description}</p>
         <ArrowButton name={"GET AN INVITE"} src={arrowSrc} />
       </div>

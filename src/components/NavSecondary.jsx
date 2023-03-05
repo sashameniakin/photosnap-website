@@ -10,7 +10,9 @@ export default function NavSecondary({
     <section className="relative flex flex-col-reverse desktop:flex-row tablet:flex-row">
       <div className="flex relative flex-col justify-center gap-[21px] bg-pureBlack text-pureWhite w-full h-auto px-7 py-[72px] desktop:w-[43%] desktop:px-28 tablet:px-10 tablet:w-[65%]">
         <div className="absolute block desktop:hidden tablet:hidden w-[128px] h-[6px] bg-gradient top-[0%] left-[10%]" />
-        <p className="text-h1Mobile desktop:text-h1 tablet:text-h1">{title}</p>
+        <h1 className="text-h1Mobile desktop:text-h1 tablet:text-h1">
+          {title}
+        </h1>
         <p className="text-body opacity-60 mb-[27px]">{description}</p>
       </div>
 
