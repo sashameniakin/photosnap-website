@@ -87,7 +87,11 @@ module.exports = {
         },
       ],
     },
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        9: "repeat(9, minmax(0, 2fr), minmax(0, 1fr), minmax(0, 1fr), minmax(0, 2fr) )",
+      },
+    },
   },
   plugins: [],
 };

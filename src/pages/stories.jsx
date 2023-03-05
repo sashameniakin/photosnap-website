@@ -23,7 +23,7 @@ export default function Stories() {
         <div className="bg-pureBlack text-pureWhite flex flex-col gap-6 px-6 py-12 justify-center desktop:hidden tablet:hidden">
           <p className="text-h4">LAST MONTH'S FEATURED STORY</p>
           <div className="flex flex-col gap-4">
-            <p className="text-h1">HAZY FULL MOON OF APPALACHIA</p>
+            <h1 className="text-h1">HAZY FULL MOON OF APPALACHIA</h1>
             <p className="text-stories opacity-75">
               March 2nd 2020{" "}
               <span className="text-stories opacity-100">
