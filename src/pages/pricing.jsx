@@ -62,51 +62,51 @@ export default function Pricing() {
           priceYear="$990.00"
         />
       </section>
-      <h1 className="text-h1">COMPARE</h1>
-      <section className="grid grid-cols-[2fr_1fr_1fr_1fr] grid-rows-9 justify-items-center items-center w-1/2 mx-auto">
-        <div className="text-h4">
-          <Item>THE FEATURES</Item>
-          <Item>UNLIMITED STORY POSTING</Item>
-          <Item>UNLIMITED FOTO UPLOAD</Item>
-          <Item>EMBEDDING CUSTOM CONTENT</Item>
-          <Item>CUSTOMIZE METADATA</Item>
-          <Item>ADVANCED METRICS</Item>
-          <Item>PHOTO DOWNLOADS</Item>
-          <Item>SEARCH ENGINE INDEXING</Item>
-          <Item>CUSTOM ANALYTICS</Item>
+      <h1 className="text-h1 text-center mt-[160px] mb-14">COMPARE</h1>
+      <section className="grid grid-cols-[3fr_1fr_1fr_1fr] grid-rows-9 justify-items-center items-center w-1/2 mx-auto mb-[160px]">
+        <div className="text-h4 justify-self-stretch">
+          <Item blackLinie title description="THE FEATURES" />
+          <Item title description="UNLIMITED STORY POSTING" />
+          <Item title description="UNLIMITED FOTO UPLOAD" />
+          <Item title description="EMBEDDING CUSTOM CONTENT" />
+          <Item title description="CUSTOMIZE METADATA" />
+          <Item title description="ADVANCED METRICS" />
+          <Item title description="PHOTO DOWNLOADS" />
+          <Item title description="SEARCH ENGINE INDEXING" />
+          <Item title description="CUSTOM ANALYTICS" />
         </div>
-        <div className="text-h4">
-          <Item>BASIC</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
+        <div className="text-h4 text-center justify-self-stretch">
+          <Item blackLinie description="BASIC" />
+          <Item check />
+          <Item check />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
         </div>
-        <div className="text-h4">
-          <Item>PRO</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
+        <div className="text-h4 text-center justify-self-stretch">
+          <Item blackLinie description="PRO" />
+          <Item check />
+          <Item check />
+          <Item check />
+          <Item check />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
         </div>
-        <div className="text-h4">
-          <Item>BUSINESS</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
-          <Item>A</Item>
+        <div className="text-h4 text-center justify-self-stretch">
+          <Item blackLinie description="BUSINESS" />
+          <Item check />
+          <Item check />
+          <Item check />
+          <Item check />
+          <Item check />
+          <Item check />
+          <Item check />
+          <Item check />
         </div>
       </section>
 
