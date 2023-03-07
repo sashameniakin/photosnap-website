@@ -42,6 +42,14 @@ module.exports = {
           letterSpacing: "3.33px",
         },
       ],
+      tableMobile: [
+        "10px",
+        {
+          lineHeight: "13.02px",
+          fontWeight: "700",
+          letterSpacing: "1.67px",
+        },
+      ],
       h2: [
         "24px",
         {
