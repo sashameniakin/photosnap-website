@@ -1,6 +1,6 @@
 export default function Switch({ pricing, setPricing }) {
   return (
-    <div className="relative flex flex-col items-center justify-center h-[32px] mt-[120px] mb-10 overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center h-[32px] desktop:mt-[120px] mt-[64px] tablet:mt-28 mb-10 overflow-hidden">
       <div className="flex">
         <label className="inline-flex relative items-center mr-5 cursor-pointer">
           <input

@@ -3,7 +3,8 @@ import { useState } from "react";
 import BGSecondary from "../components/BGSecondary";
 import NavSecondary from "../components/NavSecondary";
 import Card from "../components/Pricing/Card";
-import Item from "../components/Pricing/Item";
+import Table from "../components/Pricing/Table";
+import TableMobile from "../components/Pricing/Mobile/Table";
 
 export default function Pricing() {
   const [pricing, setPricing] = useState(0);
@@ -22,7 +23,7 @@ export default function Pricing() {
       />
 
       <Switch pricing={pricing} setPricing={setPricing} />
-      <section className="flex flex-col justify-center items-center gap-6 tablet:flex-col tablet:gap-6 desktop:flex-row desktop:gap-[30px] desktop:w-[70%] tablet:w-[95%] mx-auto">
+      <section className="flex flex-col justify-center items-center gap-6 tablet:flex-col tablet:gap-6 desktop:flex-row desktop:gap-[30px] w-[80%] desktop:w-[70%] tablet:w-[95%] mx-auto">
         <Card
           title="Basic"
           description="Includes basic usage of our platform. Recommended for new and
@@ -32,9 +33,9 @@ export default function Pricing() {
           priceYear="$190.00"
         />
 
-        <div className="flex flex-col relative desktop:text-center tablet:text-left tablet:items-start desktop:items-center bg-pureBlack text-pureWhite  px-10 gap-10 desktop:h-[470px] tablet:h-[270px]">
-          <div className="absolute block desktop:w-full desktop:h-[6px] tablet:h-full tablet:w-[6px] tablet:left-0 bg-gradient" />
-          <div className="flex flex-col  tablet:justify-between tablet:flex-row desktop:pt-[88px] tablet:pt-[40px] desktop:flex-col desktop:items-center desktop:gap-10">
+        <div className="flex flex-col relative text-center desktop:text-center tablet:text-left tablet:items-start desktop:items-center bg-pureBlack text-pureWhite px-[21px] tablet:px-10 desktop:px-10 gap-10 h-[407px] desktop:h-[470px] tablet:h-[270px]">
+          <div className="absolute block w-full left-0 h-[6px] desktop:w-full desktop:h-[6px] tablet:h-full tablet:w-[6px] tablet:left-0 bg-gradient" />
+          <div className="flex flex-col gap-10 pt-12 tablet:justify-between tablet:flex-row desktop:pt-[88px] tablet:pt-[40px] desktop:flex-col desktop:items-center desktop:gap-10">
             <div className="flex flex-col tablet:w-[45%] desktop:w-full">
               <p className="text-h2">Pro</p>
               <p className="bg-body opacity-60 mt-[18px]">
@@ -62,54 +63,15 @@ export default function Pricing() {
           priceYear="$990.00"
         />
       </section>
-      <h1 className="text-h1 text-center mt-[160px] mb-14">COMPARE</h1>
-      <section className="grid grid-cols-[3fr_1fr_1fr_1fr] grid-rows-9 justify-items-center items-center w-1/2 mx-auto mb-[160px]">
-        <div className="text-h4 justify-self-stretch">
-          <Item blackLinie title description="THE FEATURES" />
-          <Item title description="UNLIMITED STORY POSTING" />
-          <Item title description="UNLIMITED FOTO UPLOAD" />
-          <Item title description="EMBEDDING CUSTOM CONTENT" />
-          <Item title description="CUSTOMIZE METADATA" />
-          <Item title description="ADVANCED METRICS" />
-          <Item title description="PHOTO DOWNLOADS" />
-          <Item title description="SEARCH ENGINE INDEXING" />
-          <Item title description="CUSTOM ANALYTICS" />
-        </div>
-        <div className="text-h4 text-center justify-self-stretch">
-          <Item blackLinie description="BASIC" />
-          <Item check />
-          <Item check />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-        </div>
-        <div className="text-h4 text-center justify-self-stretch">
-          <Item blackLinie description="PRO" />
-          <Item check />
-          <Item check />
-          <Item check />
-          <Item check />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-        </div>
-        <div className="text-h4 text-center justify-self-stretch">
-          <Item blackLinie description="BUSINESS" />
-          <Item check />
-          <Item check />
-          <Item check />
-          <Item check />
-          <Item check />
-          <Item check />
-          <Item check />
-          <Item check />
-        </div>
-      </section>
+      <h1 className="hidden desktop:block tablet:block text-h1 text-center desktop:mt-[160px] tablet:mt-28 mb-14">
+        COMPARE
+      </h1>
+      <Table />
+      <p className=" desktop:hidden tablet:hidden w-[80%] mt-16 pb-[23px] mb-[23px] text-h4 mx-auto border-b-[1px]">
+        THE FEATURES
+      </p>
 
+      <TableMobile />
       <BGSecondary />
     </>
   );

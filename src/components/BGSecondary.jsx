@@ -3,6 +3,7 @@ import ArrowButton from "./UI/button/button-arrow";
 export default function BGSecondary() {
   return (
     <section className="relative">
+      <div className="absolute block w-[128px] left-[10%] h-[6px]  desktop:w-[6px] tablet:h-full tablet:w-[6px] tablet:left-0 bg-gradient" />
       <picture className="w-full">
         <source media="(min-width:821px)" srcSet="./images/bg-beta.jpg" />
         <source
