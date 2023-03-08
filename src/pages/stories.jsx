@@ -1,5 +1,5 @@
 import ArrowButton from "../components/UI/button/button-arrow";
-import StoriesStories from "../components/StoriesStories";
+import StoriesItems from "../components/Stories/Stories";
 
 export default function Stories() {
   return (
@@ -59,7 +59,7 @@ export default function Stories() {
           <ArrowButton name="READ THE STORY" src="./images/home/arrow.svg" />
         </div>
       </section>
-      <StoriesStories />
+      <StoriesItems />
     </>
   );
 }

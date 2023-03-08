@@ -2,10 +2,11 @@ export default function StoryData({ data, title, author, src, alt }) {
   return (
     <a
       href="/"
-      className="relative group flex flex-col justify-center items-center w-full hover:-translate-y-5 cursor-pointer transition-transform"
+      className="relative group flex flex-col justify-center items-center hover:-translate-y-5 cursor-pointer transition-transform"
     >
       <picture className="w-full">
         <img className="w-full" src={src} alt={alt} />
+
         <span className="absolute top-1/2 w-full h-1/2 bg-template" />
       </picture>
       <div className="absolute flex flex-col top-3/4 w-full">
@@ -16,7 +17,7 @@ export default function StoryData({ data, title, author, src, alt }) {
         <p className="text-pureWhite text-[13px] w-4/5 mx-auto leading-[17px] border-pureWhite border-opacity-25 border-b pb-4">
           {author}
         </p>
-        <div className="flex justify-between w-4/5 mx-auto mt-5 mb-[25px]">
+        <div className="flex justify-between w-4/5 mx-auto pt-6 pb-5 desktop:pt-4 desktop:pb-[13px] tablet:pt-5 tablet:pb-[22px]">
           <p className="text-pureWhite text-h4">READ STORY</p>
           <img src="../images/home/arrow.svg" alt="arrow" />
         </div>

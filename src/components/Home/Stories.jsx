@@ -1,6 +1,6 @@
-import Story from "./Story";
+import Story from "../Story";
 
-export default function StoriesHome() {
+export default function Stories() {
   return (
     <section className="grid w-auto grid-rows-4 tablet:grid-cols-2 tablet:grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 ">
       <Story

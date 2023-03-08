@@ -1,4 +1,4 @@
-import StoriesHome from "../components/StoriesHome";
+import Stories from "../components/Home/Stories";
 import MainStory from "../components/MainStory";
 import FeaturesAll from "../components/Home/FeaturesAll";
 
@@ -55,7 +55,7 @@ export default function Home() {
         linieY={"hidden desktop:hidden tablet:hidden"}
         linieX={"hidden desktop:hidden tablet:hidden"}
       />
-      <StoriesHome />
+      <Stories />
       <FeaturesAll />
     </>
   );
