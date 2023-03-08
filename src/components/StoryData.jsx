@@ -4,11 +4,8 @@ export default function StoryData({ data, title, author, src, alt }) {
       href="/"
       className="relative group flex flex-col justify-center items-center hover:-translate-y-5 cursor-pointer transition-transform"
     >
-      <picture className="w-full">
-        <img className="w-full" src={src} alt={alt} />
-
-        <span className="absolute top-1/2 w-full h-1/2 bg-template" />
-      </picture>
+      <img className="w-full" src={src} alt={alt} />
+      <span className="absolute top-1/2 w-full h-1/2 bg-template" />
       <div className="absolute flex flex-col top-3/4 w-full">
         <p className="text-pureWhite text-[13px] w-4/5 mx-auto leading-[17px]">
           {data}

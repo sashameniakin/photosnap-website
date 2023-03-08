@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex justify-around items-center my-7">
+      <div className="flex justify-around items-center mt-7 mb-8">
         <Link to="/">
           <img src="./images/home/logo.svg" alt="logo" />
         </Link>
